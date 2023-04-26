@@ -22,14 +22,7 @@ function createGallery(galleryItems) {
 
 galleryContainer.insertAdjacentHTML("beforeend", galleryWithItems);
 
-galleryContainer.addEventListener("click", onItemClick);
-
-function onItemClick(evt) {
-  evt.preventDefault();
-}
-
 let lightbox = new SimpleLightbox(".gallery a", {
-  /* options */
-  captionPosition: "bottom",
+  captionsData: "alt",
   captionDelay: "250",
 });
