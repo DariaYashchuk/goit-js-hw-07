@@ -30,4 +30,6 @@ function onItemClick(evt) {
 
 let lightbox = new SimpleLightbox(".gallery a", {
   /* options */
+  captionPosition: "bottom",
+  captionDelay: "250",
 });
